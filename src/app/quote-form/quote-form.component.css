@@ -1,8 +1,9 @@
 .card{
-    width: 25rem;
+		width: 28rem;
+		margin-left: 50px;
+		padding: 20px;
 }
 
 .alert{
-border: red;
-color: red;
+  color: red;
 }

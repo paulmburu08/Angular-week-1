@@ -1,25 +1,25 @@
 <div class="card"><br>
-	<p><b>WRITE YOUR QUOTE</b></p>
+	<h3><b>WRITE YOUR QUOTE</b></h3>
 	<form>
 
 		<div class="form-group">
 			<label for="name">Your Name</label><br>
 			<input required ngModel name="name" #personName ="ngModel" (change)="log(personName)" size="40" type="text" id="name">
 			<div class="alert" *ngIf="personName.touched && !personName.valid">Name required</div>
-		</div><br>
+		</div>
 
 		<div class="form-goup">
 			<label for="quotes">Quote</label><br>
 			<textarea required ngModel name="quotes" #personQuote ="ngModel" (change)="log(personQuote)" rows="7" cols="40" id="quotes"></textarea>
 			<div class="alert" *ngIf="personQuote.touched && !personQuote.valid">Quote required</div>
-		</div><br>
+		</div>
 
 		<div class="form-group"> 
 			<label for="author">Author of Quote</label><br>
 			<input required ngModel name="author" #personAuthor ="ngModel" (change)="log(personAuthor)" size="40" type="text" id="author">
 			<div class="alert" *ngIf="personAuthor.touched && !personAuthor.valid">Author required</div>
 		</div><br>
-		<button type="submit" class="btn">SUBMIT</button>
+		<button type="submit" class="btn btn-primary">SUBMIT</button>
 		
 	</form><br>
 
