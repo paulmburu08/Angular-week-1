@@ -16,9 +16,10 @@
 
 		<div class="form-group"> 
 			<label for="author">Author of Quote</label><br>
-			<input size="40" type="text" id="author">
+			<input required ngModel name="author" #personAuthor ="ngModel" (change)="log(personAuthor)" size="40" type="text" id="author">
+			<div class="alert" *ngIf="personAuthor.touched && !personAuthor.valid">Author required</div>
 		</div><br>
-		<button class="btn">SUBMIT</button>
+		<button type="submit" class="btn">SUBMIT</button>
 		
 	</form><br>
 
