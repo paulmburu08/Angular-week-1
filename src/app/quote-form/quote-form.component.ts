@@ -8,6 +8,7 @@ import { Quotes } from '../quotes'
 })
 export class QuoteFormComponent implements OnInit {
 
+  userQuote = new Quotes(0,"","","")
   constructor() { }
 
   ngOnInit(): void {
