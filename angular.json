@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "IP"
+    }
+  },
+  "defaultProject": "IP",
+  "cli": {
+    "analytics": "f5a6a947-853a-4e04-bd04-665c7907f9b8"
+  }
 }
