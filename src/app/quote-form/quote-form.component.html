@@ -25,7 +25,7 @@
 			[(ngModel)]=userQuote.author>
 			<small class="text-danger" [class.d-none]="author.valid || author.untouched" >Author is required</small>
 		</div><br>
-		<button type="submit" class="btn btn-primary">SUBMIT</button>
+		<button [disabled]="userForm.form.invalid" type="submit" class="btn btn-primary">SUBMIT</button>
 
 	</form><br>
 
