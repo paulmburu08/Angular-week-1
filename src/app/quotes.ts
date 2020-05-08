@@ -1,5 +1,8 @@
 export class Quotes {
-    name : string;
-    quote : any;
-    author : string;
+    constructor(
+			public id : number,
+			public name : string,
+			public quote : any,
+			public author : string
+    ){}   
 }
