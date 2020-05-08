@@ -7,23 +7,26 @@
 			<input required #name="ngModel" [class.is-invalid]="name.invalid && name.touched" 
 			class="form-control" size="40" type="text" id="name" name="userName" 
 			[(ngModel)]=userQuote.name>
+			<small class="text-danger" [class.d-none]="name.valid || name.untouched" >Name is required</small>
 		</div>
 
 		<div class="form-goup">
-			<label for="quotes">Quote</label><br>
+			<label for="quote">Quote</label><br>
 			<textarea required #quote="ngModel" [class.is-invalid]="quote.invalid && quote.touched"
-			 class="form-control" rows="7" cols="40" id="quotes" name="theQuote" 
+			 class="form-control" rows="7" cols="40" id="quote" name="theQuote" 
 			 [(ngModel)]=userQuote.quote></textarea>
-		</div>
+			 <small class="text-danger" [class.d-none]="quote.valid || quote.untouched" >Quote is required</small>
+		</div><br>
 
 		<div class="form-group"> 
 			<label for="author">Author of Quote</label><br>
 			<input required #author="ngModel" [class.is-invalid]="author.invalid && author.touched" 
 			class="form-control" size="40" type="text" id="author" name="author" 
 			[(ngModel)]=userQuote.author>
+			<small class="text-danger" [class.d-none]="author.valid || author.untouched" >Author is required</small>
 		</div><br>
 		<button type="submit" class="btn btn-primary">SUBMIT</button>
-		
+
 	</form><br>
 
 </div>
