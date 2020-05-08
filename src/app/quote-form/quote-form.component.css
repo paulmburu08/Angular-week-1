@@ -1,5 +1,8 @@
 .card{
-    text-align: center;
-    background-color: aquamarine;
     width: 25rem;
+}
+
+.alert{
+border: red;
+color: red;
 }
