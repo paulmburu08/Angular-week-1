@@ -3,5 +3,6 @@ export class Quotes {
 			public name : string,
 			public quote : any,
 			public author : string
-    ){}   
+	){}   
+	
 }
