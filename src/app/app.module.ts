@@ -9,7 +9,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
 @NgModule({
   declarations: [
     AppComponent,
-    QuoteFormComponent
+    QuoteFormComponent,
   ],
   imports: [
     BrowserModule,
