@@ -1,6 +1,8 @@
 <app-quote-form (finalQuote)="addNewQuote($event)"></app-quote-form>
-<div *ngFor="let showQuote of showQuotes" class="card">
-		{{showQuote.name}}<br>
-		{{showQuote.quote}}<br>
-		{{showQuote.author}}<br>	
-</div>		
+<div>
+  <div *ngFor="let showQuote of showQuotes; let i = index">
+		<p>{{showQuote.quote}}</p>
+		<button (click)='toggleDetails(i)' class="btn btn-info btn-sm">See more</button>
+		<app-quote-description *ngIf='showQuote.showDescription' [description]='showQuote' (deleteQuote)='yesDelete($event,i)'></app-quote-description>
+  </div>		
+</div>

@@ -16,6 +16,16 @@ export class QuotemeComponent implements OnInit {
     this.showQuotes.push(myQuote);  
   }
 
+  toggleDetails(index){
+    this.showQuotes[index].showDescription = !this.showQuotes[index].showDescription;
+  }
+
+  yesDelete(deleteQuote,index){
+    if(deleteQuote){
+      this.showQuotes.splice(index,1)
+    }
+  }
+
 
   constructor() { }
 
