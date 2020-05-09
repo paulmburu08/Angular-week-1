@@ -7,9 +7,10 @@ import { Quotes } from './quotes';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  showQuote : Quotes
+  title = 'QUOTEME'
+  showQuote : any
 
-  addNewQuote(myQuote : Quotes){
-    this.showQuote = myQuote;
+  addNewQuote(myQuote : any){
+    this.showQuote = myQuote;  
   }
 }
