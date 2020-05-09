@@ -1,6 +1,8 @@
 <app-quote-form (finalQuote)="addNewQuote($event)"></app-quote-form>
 <ul>
-	<li>
-		{{showQuote}}
+	<li *ngFor="let showQuote of showQuotes">
+		{{showQuote.name}}<br>
+		{{showQuote.quote}}<br>
+		{{showQuote.author}}
 	</li>
 </ul>

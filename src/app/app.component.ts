@@ -8,9 +8,9 @@ import { Quotes } from './quotes';
 })
 export class AppComponent {
   title = 'QUOTEME'
-  showQuote : any
+  showQuotes = []
 
   addNewQuote(myQuote : any){
-    this.showQuote = myQuote;  
+    this.showQuotes.push(myQuote);  
   }
 }
