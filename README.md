@@ -1,6 +1,6 @@
 # Quoteme
 
-####Fund Me is a website that people come to post quotes for Inspiration purposes and get votes for the best quotes posted.
+####Quoteme is a website that people come to post quotes for Inspiration purposes and get votes for the best quotes posted.
 
 #### Authors
 - {paulmburu08}https://github.com/paulmburu08
