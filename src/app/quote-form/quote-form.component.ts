@@ -14,10 +14,12 @@ export class QuoteFormComponent implements OnInit {
   onSubmit(){
     this.finalQuote.emit(this.userQuote);
   }
-  
-  constructor() { }
+  constructor() {
+
+   }
 
   ngOnInit(): void {
+    
   }
 
 }

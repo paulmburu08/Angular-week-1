@@ -1,2 +1,6 @@
-<p>{{description.author}}</p>
-<button (click)="removeQuote(true)" class="btn btn-dark btn-sm">Delete</button>
+<p><small>Posted by <b>{{description.name}}</b> {{datewithoutTime | timeCount}} days ago</small></p>
+<div>
+    <button (click)="likeButton()" class="btn btn-outline-success btn-sm">like</button> {{numberOfLikes}} &nbsp;
+    <button (click)="dislikeButton()" class="btn btn-outline-danger btn-sm">dislike</button> {{numberOfDislikes}} &nbsp;
+    <button (click)="removeQuote(true)" class="btn btn-dark btn-sm">Delete</button>
+</div>
