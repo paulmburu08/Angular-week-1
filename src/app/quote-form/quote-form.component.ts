@@ -13,6 +13,7 @@ export class QuoteFormComponent implements OnInit {
 
   onSubmit(){
     this.finalQuote.emit(this.userQuote);
+    this.userQuote = new Quotes("","","");
   }
   constructor() {
 

@@ -1,9 +1,17 @@
-<app-quote-form (finalQuote)="addNewQuote($event)"></app-quote-form>
-<div class="row">
-  <div appHighlight *ngFor="let showQuote of showQuotes; let i = index" class="card col-md-4">
-		<p>{{showQuote.quote}}</p>
-		<p><i><small>By <b>{{showQuote.author}}</b></small></i></p>
-		<button (click)='toggleDetails(i)' class="btn btn-link btn-sm">See more</button>
-		<app-quote-description *ngIf='showQuote.showDescription' [description]='showQuote' (deleteQuote)='yesDelete($event,i)'></app-quote-description>
-	</div>		
-</div><br><br><br>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<app-quote-form (finalQuote)="addNewQuote($event)"></app-quote-form>
+		</div>
+		<div class="col-md-4">
+			<div>
+			<div appHighlight *ngFor="let showQuote of showQuotes; let i = index" class="card">
+					<p>{{showQuote.quote}}</p>
+					<p><i><small>By <b>{{showQuote.author}}</b></small></i></p>
+					<button (click)='toggleDetails(i)' class="btn btn-link btn-sm">See more</button>
+					<app-quote-description *ngIf='showQuote.showDescription' [description]='showQuote' (deleteQuote)='yesDelete($event,i)'></app-quote-description>
+				</div>		
+			</div><br><br><br>
+	</div>
+</div>
+</div>

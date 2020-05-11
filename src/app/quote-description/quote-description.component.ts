@@ -30,8 +30,7 @@ export class QuoteDescriptionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    if(this.numberOfLikes>this.numberOfLikes){
-    }
+  
   }
 
 }

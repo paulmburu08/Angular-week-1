@@ -1,4 +1,4 @@
-<div class="card"><br>
+<div><br>
 	<h3><b>WRITE YOUR QUOTE</b></h3>
 	<form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
 
@@ -27,6 +27,5 @@
 		</div><br>
 		<button [disabled]="userForm.form.invalid" type="submit" class="btn btn-primary">SUBMIT</button>
 
-	</form><br>
-
+	</form>
 </div>
