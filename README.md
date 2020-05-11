@@ -1,5 +1,4 @@
 [![codebeat badge](https://codebeat.co/badges/e1da1a9f-82f2-4d48-8ba0-ebf73d348b8a)](https://codebeat.co/projects/github-com-paulmburu08-angular-week-1-master)
-
 # Quoteme
 
 ####Quoteme is a website that people come to post quotes for Inspiration purposes and get votes for the best quotes posted.
