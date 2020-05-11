@@ -8,8 +8,8 @@ import { Quotes } from '../quotes';
 })
 export class QuotemeComponent implements OnInit {
   showQuotes : Quotes[] = [
-    new Quotes('Willis Liam',' If life were predictable it would cease to be life and be without flavor','Eleanor Roosevelt'),
-    new Quotes('Ken John','The greatest glory in living lies not in never falling, but in rising every time we fall','Nelson Mandela')
+    new Quotes('Willis Liam',' If life were predictable it would cease to be life and be without flavor','Eleanor Roosevelt',new Date(2020,3,14)),
+    new Quotes('Ken John','The greatest glory in living lies not in never falling, but in rising every time we fall','Nelson Mandela',new Date(2019,6,9))
   ]
 
   addNewQuote(myQuote : any){

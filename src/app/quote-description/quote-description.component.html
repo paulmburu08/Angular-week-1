@@ -1,4 +1,4 @@
-<p><small>Posted by <b>{{description.name}}</b> {{datewithoutTime | timeCount}} days ago</small></p>
+<p><small>Posted by <b>{{description.name}}</b> {{description.date | timeCount}} days ago</small></p>
 <div>
     <button (click)="likeButton()" class="btn btn-outline-success btn-sm">like</button> {{numberOfLikes}} &nbsp;
     <button (click)="dislikeButton()" class="btn btn-outline-danger btn-sm">dislike</button> {{numberOfDislikes}} &nbsp;
